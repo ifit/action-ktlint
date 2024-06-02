@@ -1,4 +1,4 @@
-FROM public.ecr.aws/docker/library/alpine:3.11
+FROM public.ecr.aws/docker/library/alpine:3.20
 
 ENV REVIEWDOG_VERSION=v0.14.1
 
