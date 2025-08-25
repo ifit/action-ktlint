@@ -7,7 +7,7 @@ SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 RUN apk --no-cache --update add git curl wget openjdk11 \
     && rm -rf /var/cache/apk/*
 
-RUN wget -O - -q https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh| sh -s -- -b /usr/local/bin/ ${REVIEWDOG_VERSION}
+RUN wget -O - -q https://raw.githubusercontent.com/reviewdog/reviewdog/c10bf43080e95f1491d10eff068de76b5329be2a/install.sh| sh -s -- -b /usr/local/bin/ ${REVIEWDOG_VERSION}
 
 COPY entrypoint.sh /entrypoint.sh
 
